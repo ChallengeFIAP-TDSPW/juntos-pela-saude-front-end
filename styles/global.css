@@ -11,6 +11,53 @@
     --fonte-principal:  "Montserrat", sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--azul-princial);
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.imagem-logo{
+    width: 8vw;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+.icone-usuario{
+    width: 3vw;
+}
+
+
 footer{
     background-color: var(--azul-princial);
     font-family: var(--fonte-principal);
