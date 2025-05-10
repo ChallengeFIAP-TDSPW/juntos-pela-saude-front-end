@@ -53,6 +53,10 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
+.active{
+    font-weight: bolder;
+}
+
 .icone-usuario{
     width: 3vw;
 }
