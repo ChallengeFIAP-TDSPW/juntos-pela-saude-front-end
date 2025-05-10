@@ -1,0 +1,100 @@
+#contato{
+    font-family: var(--fonte-principal);
+}
+
+#conteudo_secao1{
+    background-color: var(--azul-claro);
+    padding: 60px 0px 60px 40px;
+}
+
+#conteudo_secao1 h1,
+#conteudo_secao2 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    gap: 20px;
+    padding: 40px 70px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+label{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.campo input,
+.campo textarea {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #e6f3ff;
+    box-sizing: border-box;
+    margin-top: 5px;
+    resize: none; 
+    font-family: var(--fonte-principal); 
+}
+.botao {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.botao button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--azul-princial); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.botao button:hover{
+    transform: scale(1.1);
+    background-color: #1c5fc1;
+}
+
+#conteudo_secao2{
+    padding: 60px 0px 60px 40px;
+}
+
+#conteudo_secao2 ul{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.informacao_contato{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
