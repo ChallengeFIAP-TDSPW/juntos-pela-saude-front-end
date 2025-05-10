@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -15,8 +17,8 @@
             <ul>
                 <li><a href="../index.html">Inicío</a></li>
                 <li><a href="#">Agenda</a></li>
-                <li><a href="../pages/faq.html">FAQ</a></li>
-                <li><a href="../pages/contato.html">Contato</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
 
@@ -24,6 +26,55 @@
             <img class="icone-usuario" src="../assets/icons/icone-usuario.png" alt="Icone do usuário">
         </a>
 
-    </header> 
+    </header>
+    <main>
+        <section id="conteudo_main">
+            <h1>Suas consultas</h1>
+
+            <div class="filtro_busca">
+
+                <select id="filtroStatus">
+                    <option value="">Filtro</option>
+                    <option value="Confirmada">Confirmada</option>
+                    <option value="Realizada">Realizada</option>
+                </select>
+
+                <form class="busca">
+                    <input type="text" name="q" placeholder="Buscar">
+                    <button type="submit"><img src="../assets/icons/icone-busca.png" alt="ícone de Busca"></button>
+                </form>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="conteudo_conuslta">
+                        <h2>CONSULTA</h2>
+                        <p><strong>Especialidade:</strong> Fisioterapia</p>
+                        <p><strong>Nome do médico:</strong> Felipe </p>
+                        <p><strong>Data e Hora:</strong> 10/04/2025 - 18h</p>
+                        <p><strong>Status:</strong> Realizada</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="conteudo_conuslta">
+                        <h2>CONSULTA</h2>
+                        <p><strong>Especialidade:</strong> Fisioterapia</p>
+                        <p><strong>Nome do médico:</strong> Gabriel </p>
+                        <p><strong>Data e Hora:</strong> 15/05/2025 - 16h</p>
+                        <p><strong>Status:</strong> Confirmada</p>
+                        <a href="#">Entrar na consulta</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
 </body>
+
 </html>
