@@ -1,0 +1,43 @@
+#secao1{
+    background-color: var(--azul-claro);
+    padding: 60px 0px 30px 40px ;
+}
+
+#secao1 h1{
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.card{
+    width: 700px;
+    padding: 25px 0px 25px 25px;
+    gap: 40px;
+    display: flex;
+
+    border-radius: 5px;
+    background-color: var(--cinza-claro);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+.card_imagem{
+    width: 10vw;
+}
+
+.conteudo_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 20px; 
+}
+
+a{
+    text-decoration: none;
+}
