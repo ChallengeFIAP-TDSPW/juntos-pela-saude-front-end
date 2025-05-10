@@ -1,0 +1,107 @@
+#conteudo_main {
+    background-color: var(--azul-claro);
+    padding: 60px 0px 60px 40px;
+}
+
+#conteudo_main h1 {
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.filtro_busca{
+    display: flex;
+    gap: 20px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 3px 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.busca input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 6px;
+    background-color: transparent;
+}
+
+.busca button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.busca button img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+#filtroStatus {
+    width: 200px;
+    padding: 6px 10px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    appearance: none;
+
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 500px;
+    padding: 25px 0px 30px 25px;
+    gap: 40px;
+    display: flex;
+
+    border-radius: 5px;
+    background-color: var(--cinza-claro);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.conteudo_conuslta h2 {
+    color: var(--azul-princial);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+}
+
+.conteudo_conuslta p {
+    margin-top: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+}
+
+.conteudo_conuslta a {
+    font-family: var(--fonte-principal);
+    background-color: var(--azul-princial);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 300px;
+    padding: 10px;
+}
