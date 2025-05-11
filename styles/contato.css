@@ -3,7 +3,6 @@
 }
 
 #conteudo_secao1{
-    background-color: var(--azul-claro);
     padding: 60px 0px 60px 40px;
 }
 
@@ -81,6 +80,7 @@ label{
 }
 
 #conteudo_secao2{
+    background-color: #ffff;
     padding: 60px 0px 60px 40px;
 }
 

@@ -11,12 +11,30 @@
     --fonte-principal:  "Montserrat", sans-serif;
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--azul-claro);
+}
+
+main{
+    flex: 1;
+}
+
 header{
+    position: relative;
     background-color: var(--azul-princial);
     font-family: var(--fonte-principal);
     display: flex;
@@ -29,6 +47,12 @@ header{
 
 .imagem-logo{
     width: 8vw;
+}
+
+header nav{
+    position: absolute;
+    left: 50%;
+        transform: translateX(-50%);
 }
 
 header nav ul{

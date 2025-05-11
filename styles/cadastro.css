@@ -1,0 +1,9 @@
+.titulo_formulario h1{
+    font-size: 28px;
+}
+
+.link{
+    width: 300px;
+    text-align: left;
+    margin-top: -10px; 
+}
