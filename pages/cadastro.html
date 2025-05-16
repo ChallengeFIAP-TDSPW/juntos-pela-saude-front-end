@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <script src="../js/login.js" defer></script>
     
 </head>
 
@@ -16,7 +17,7 @@
         <a href="../index.html"><img src="../assets/images/logo-completa-azul.png" alt="Logo da Juntos pela Saúde"></a>
 
         <div class="form-wrapper">
-            <form onsubmit="event.preventDefault();" class="formulario">
+            <form id="form_cadastro" class="formulario">
                 <div class="titulo_formulario">
                     <h1>Bem-Vindo à Juntos pela Saúde</h1>
                     <p>Cadastre-se para acessar o painel de gestão</p>
@@ -27,7 +28,7 @@
                 </div>
                 <div class="campo">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Digite seu email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
                 </div>
                 <div class="campo">
                     <label for="cpf">CPF</label>
@@ -35,12 +36,14 @@
                 </div>
                 <div class="campo">
                     <label for="senha">Senha</label>
-                    <input type="text" id="senha" name="senha" placeholder="Digite sua senha">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
                 </div>
                 <div class="campo">
                     <label for="senha">Confirmar Senha</label>
-                    <input type="text" id="confirma_senha" name="confrima_senha" placeholder="Confirme sua senha">
+                    <input type="password" id="confirma_senha" name="confrima_senha" placeholder="Confirme sua senha">
                 </div>
+
+                <div id="mensagem"></div>
 
                 <div class="botao">
                     <button>Cadastrar</button>
