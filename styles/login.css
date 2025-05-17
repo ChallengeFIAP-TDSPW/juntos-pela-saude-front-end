@@ -52,7 +52,9 @@ img{
     justify-content: center;
 }
 
-.formulario{
+#form_login, 
+#form_cadastro,
+#form_editar{
     background-color: #ffff;
     display: flex;
     flex-direction: column;

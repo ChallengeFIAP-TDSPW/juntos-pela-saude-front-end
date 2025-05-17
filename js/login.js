@@ -1,6 +1,6 @@
 function getUsuarios(){
     const usuariosJSON = localStorage.getItem('usuarios');
-    return usuariosJSON ? JSON.parse(usuariosJSON) : [];
+    return usuariosJSON ? JSON.parse(usuariosJSON) : []; 
 }
 
 function salvarUsuarios(usuarios){
@@ -25,12 +25,23 @@ if (formCadastro) {
         const senha = document.getElementById('senha').value;
         const confirmaSenha = document.getElementById('confirma_senha').value;
 
+        if (!nome || !email || !cpf || !senha || !confirmaSenha) {
+            mostrarMensagem('Por favor, preencha todos os campos.', 'red');
+            return;
+        }
+
         const usuarios = getUsuarios();
 
         const existe = usuarios.some(user => user.email === email);
+        const cpfExiste = usuarios.some(user => user.cpf === cpf);
 
         if (existe) {
             mostrarMensagem('Email já cadastrado!', 'red');
+            return;
+        }
+
+        if (cpfExiste){
+            mostrarMensagem('CPF já cadastrado!', 'red');
             return;
         }
 
@@ -72,6 +83,8 @@ if (formLogin) {
             mostrarMensagem('Login realizado com sucesso!', 'green');
             formLogin.reset();
 
+            localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+
             setTimeout(() => {
                 window.location.href = '../index.html';
             }, 1500);
@@ -83,3 +96,4 @@ if (formLogin) {
     });
 }
 
+console.log('usuario logado: ', localStorage.getItem('usuarioLogado'));

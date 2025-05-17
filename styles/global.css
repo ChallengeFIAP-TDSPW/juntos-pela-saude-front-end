@@ -81,6 +81,12 @@ header nav ul li a:hover {
     font-weight: bolder;
 }
 
+#btn_user{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .icone-usuario{
     width: 3vw;
 }
