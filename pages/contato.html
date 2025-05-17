@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../styles/contato.css">
     <script src="../js/chatbot.js" defer></script>
     <script src="../js/verificacao.js" defer></script>
+    <script src="../js/contato.js" defer></script>
+
 </head>
 
 <body>
@@ -39,8 +41,8 @@
             <p>Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais rápido possível. É
                 simples, rápido e seguro!</p>
 
-            <div class="form-wrapper">
-                <form onsubmit="event.preventDefault();" class="formulario">
+            <div  class="form-wrapper">
+                <form  id="form_contato" class="formulario">
                     <div class="campo">
                         <label for="nome">Nome Completo</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
@@ -58,6 +60,9 @@
                         <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4"
                             wrap="soft"></textarea>
                     </div>
+                    
+                    <div id="mensagemContato"></div>
+                    
                     <div class="botao">
                         <button>Enviar</button>
                     </div>
