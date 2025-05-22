@@ -1,8 +1,8 @@
-#contato{
+#contato {
     font-family: var(--fonte-principal);
 }
 
-#conteudo_secao1{
+#conteudo_secao1 {
     padding: 60px 0px 60px 40px;
 }
 
@@ -12,12 +12,18 @@
     margin-bottom: 20px;
 }
 
-.form-wrapper{
+#conteudo_secao1 p,
+#conteudo_secao2 p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.formulario{
+.formulario {
     background-color: #ffff;
     display: flex;
     flex-direction: column;
@@ -32,14 +38,14 @@
 
 }
 
-.campo{
+.campo {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
 
-label{
+label {
     font-size: 18px;
     font-weight: 400;
 }
@@ -54,19 +60,20 @@ label{
     box-sizing: border-box;
     margin-top: 5px;
     border-radius: 3px;
-    resize: none; 
-    font-family: var(--fonte-principal); 
+    resize: none;
+    font-family: var(--fonte-principal);
 }
+
 .botao {
     width: 400px;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .botao button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: var(--azul-princial); 
+    background-color: var(--azul-princial);
     color: white;
     border: none;
     border-radius: 5px;
@@ -76,17 +83,17 @@ label{
     transition: transform 0.3s ease;
 }
 
-.botao button:hover{
+.botao button:hover {
     transform: scale(1.1);
     background-color: #1c5fc1;
 }
 
-#conteudo_secao2{
+#conteudo_secao2 {
     background-color: #ffff;
     padding: 60px 0px 60px 40px;
 }
 
-#conteudo_secao2 ul{
+#conteudo_secao2 ul {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -94,9 +101,196 @@ label{
 
 }
 
-.informacao_contato{
+.informacao_contato {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+@media (max-width: 1050px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 35px;
+
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 15x;
+
+    }
+}
+
+@media (max-width: 780px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 30px;
+
+    }
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 15px;
+        width: 95%;
+    }
+
+    #conteudo_secao1 {
+        padding: 60px 0px 60px 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 28px;
+
+    }
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .formulario {
+        width: 60%;
+    }
+
+    .campo input,
+    .campo textarea {
+        width: 355px;
+    }
+
+    .botao {
+        width: 355px;
+    }
+
+    .icones {
+        width: 50px;
+    }
+}
+
+@media (max-width: 585px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 26px;
+    }
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 14px;
+        width: 92%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 22px;
+    }
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .botao {
+        width: 350px;
+    }
+
+    .icones {
+        width: 45px;
+    }
+}
+
+@media (max-width: 455px) {
+
+    #conteudo_secao1 h1,
+    #conteudo_secao2 h1 {
+        font-size: 20px;
+    }
+
+    #conteudo_secao1 p,
+    #conteudo_secao2 p {
+        font-size: 14px;
+        width: 88%;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 14px;
+        width: 350px;
+    }
+
+    .botao {
+        width: 350px;
+    }
+
+    .icones {
+        width: 45px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .campo input,
+    .campo textarea {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    .botao {
+        width: 300px;
+    }
+
+    .icones {
+        width: 45px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .campo input,
+    .campo textarea {
+        font-size: 14px;
+        width: 290px;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    .botao {
+        width: 290px;
+    }
+
+    .icones {
+        width: 38px;
+    }
 }
