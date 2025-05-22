@@ -38,3 +38,39 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
+@media (max-width: 685px) {
+    #conteudo_faq h1 {
+        font-size: 30px;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    #conteudo_faq h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 460px) {
+    #conteudo_faq h1 {
+        font-size: 20px;
+    }
+
+    .faq-item summary {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    #conteudo_faq h1 {
+        font-size: 18px;
+    }
+
+    .faq-item summary {
+        font-size: 11px;
+    }
+}
