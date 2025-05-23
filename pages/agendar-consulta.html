@@ -14,6 +14,77 @@
 </head>
 
 <body>
+    <header>
+        <a href="../index.html">
+            <img class="imagem-logo" src="../assets/images/logo-completa-branca.png" alt="Logo da Juntos pela Saúde">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicío</a></li>
+                <li><a href="./agenda.html">Agenda</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button id="btn_user">
+             <img class="icone-usuario" src="../assets/icons/icone-usuario.png" alt="Icone do usuário">
+        </button>
+
+    </header>
+    
+<main>
+    <section id="conteudo_main">
+        <h1>Agendar Consulta</h1>
+        <p>Preencha o formulário abaixo para agendar sua consulta. Se tiver dúvidas, entre em contato conosco.</p>
+
+        <form id="formAgendarConsulta">
+            <div class="campo">
+                <label for="especialidade">Especialidade:</label>
+                <select id="especialidade" name="especialidade" required>
+                    <option value="">Selecione</option>
+                    <option value="Fisioterapia">Fisioterapia</option>
+                    <option value="Pediatria">Pediatria</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Oftalmologia">Oftalmologia</option>
+                    <option value="Ginecologia">Ginecologia</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                    <option value="Neurologia">Neurologia</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="medico">Médico:</label>
+                <select id="medico" name="medico" required>
+                    <option value="">Selecione</option>
+                    <option value="Dr. Felipe">Dr. Felipe</option>
+                    <option value="Dr. Gabriel">Dr. Gabriel</option>
+                    <option value="Dra. Ana">Dra. Ana</option>
+                    <option value="Dr. João">Dr. João</option>
+                    <option value="Dra. Maria">Dra. Maria</option>
+                    <option value="Dr. Carlos">Dr. Carlos</option>
+                    <option value="Dra. Fernanda">Dra. Fernanda</option>
+                    <option value="Dr. Ricardo">Dr. Ricardo</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="dataHora">Data e Hora:</label>
+                <input type="datetime-local" id="dataHora" name="dataHora" required>
+            </div>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <div class="informacoes">
+            <h2>Informações Adicionais</h2>
+            <p>Após o agendamento, você receberá um e-mail de confirmação com todos os detalhes da sua consulta.</p>
+            <p>Se precisar de ajuda, entre em contato pelo telefone: (XX) XXXX-XXXX.</p>
+        </div>
+    </section>
+</main>
 
 </body>
 
