@@ -40,3 +40,65 @@
 a{
     text-decoration: none;
 }
+
+
+@media (max-width:930px){
+    #secao1 h1{   
+    font-size: 35px;   
+}
+#secao1 p{
+    font-size: 18px;   
+}
+.card{
+    width: 650px;
+
+}
+.card_imagem{
+    width: 15%;
+}
+}
+
+@media (max-width: 750px){
+        #secao1 h1{   
+    font-size: 30px;   
+}
+#secao1 p{
+    font-size: 16px;   
+}
+    .card{
+    width: 400px;
+
+}
+.card_imagem{
+    width: 25%;
+}
+}
+
+@media (max-width: 500px){
+            #secao1 h1{   
+    font-size: 25px;   
+}
+#secao1 p{
+    font-size: 14px;   
+}
+    .card{
+    width: 350px;
+
+}
+.card_imagem{
+    width: 25%;
+}
+}
+
+@media (max-width: 390px){
+   #secao1{
+    padding: 60px 0px 30px 10px;
+} 
+    .card{
+    width: 310px;
+
+}
+.card_imagem{
+    width: 33%;
+}
+}
