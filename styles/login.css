@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --azul-princial: #2F80ED;
     --azul-claro: #DCEEFF;
     --cinza-claro: #F2F2F2;
@@ -8,21 +8,21 @@
     --verde-claro: #27AE60;
     --vermelho-claro: #EB5757;
 
-    --fonte-principal:  "Montserrat", sans-serif;
+    --fonte-principal: "Montserrat", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-body{
+body {
     background-color: var(--azul-claro);
-    font-family: var(--fonte-principal); 
+    font-family: var(--fonte-principal);
 }
 
-#conteudo{
+#conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +30,12 @@ body{
     margin: 40px 0px 30px 0px;
 }
 
-img{
+img {
     width: 25vh;
 }
 
-.titulo_formulario{
+.titulo_formulario,
+.titulo_formulario_cados_conta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,45 +44,45 @@ img{
     margin-bottom: 40px;
 }
 
-.titulo_formulario p{
+.titulo_formulario p {
     color: #78909C;
 }
 
-.form-wrapper{
+.form-wrapper {
     display: flex;
     justify-content: center;
 }
 
-#form_login, 
+#form_login,
 #form_cadastro,
-#form_editar{
+#form_editar {
     background-color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 45px;
     gap: 20px;
-    padding: 30px  120px 200px 120px;
+    padding: 30px 120px 200px 120px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     border-radius: 5px;
-    width: 100%;
+
 
 }
 
-.campo{
+.campo {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
 
-label{ 
+label {
     font-size: 18px;
     font-weight: 400;
 }
 
-.campo input{
+.campo input {
     width: 400px;
     padding: 10px;
     font-size: 16px;
@@ -89,9 +90,9 @@ label{
     background-color: #e6f3ff;
     box-sizing: border-box;
     margin-top: 5px;
-    resize: none; 
+    resize: none;
     border-radius: 3px;
-    font-family: var(--fonte-principal); 
+    font-family: var(--fonte-principal);
 }
 
 .botao {
@@ -102,7 +103,7 @@ label{
     width: 400px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: var(--azul-princial); 
+    background-color: var(--azul-princial);
     color: white;
     border: none;
     border-radius: 5px;
@@ -110,7 +111,125 @@ label{
     font-family: var(--fonte-principal);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--azul-princial)
+}
+
+
+@media (max-width: 760px) {
+
+    #form_login,
+    #form_cadastro,
+    #form_editar {
+        padding: 30px 100px 150px 100px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    #form_login,
+    #form_cadastro,
+    #form_editar {
+        padding: 30px 70px 150px 70px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    #form_login,
+    #form_cadastro,
+    #form_editar {
+        padding: 30px 50px 80px 50px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    #form_login,
+    #form_cadastro,
+    #form_editar {
+        padding: 40px 20px 80px 20px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .titulo_formulario h1 {
+        font-size: 25px;
+    }
+
+    .titulo_formulario p {
+        font-size: 15px;
+    }
+
+    .titulo_formulario h1 {
+        font-size: 24px;
+    }
+
+    .titulo_formulario p {
+        font-size: 14px;
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .botao button {
+        max-width: 150px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .link {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    #form_login,
+    #form_cadastro,
+    #form_editar {
+        padding: 40px 15px 80px 15px; 
+        max-width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .titulo_formulario h1 {
+        font-size: 24px; 
+    }
+
+    .titulo_formulario p {
+        font-size: 14px; 
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .campo input {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .botao button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .link {
+        width: 100%; 
+        text-align: center; 
+        font-size: 14px; 
+    }
 }
