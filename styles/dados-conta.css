@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --azul-princial: #2F80ED;
     --azul-claro: #DCEEFF;
     --cinza-claro: #F2F2F2;
@@ -8,20 +8,20 @@
     --verde-claro: #27AE60;
     --vermelho-claro: #EB5757;
 
-    --fonte-principal:  "Montserrat", sans-serif;
+    --fonte-principal: "Montserrat", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: var(--azul-claro);
-    font-family: var(--fonte-principal); 
+    font-family: var(--fonte-principal);
 }
 
-#conteudo{
+#conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +29,11 @@ body{
     margin: 40px 0px 90px 0px;
 }
 
-img{
+img {
     width: 25vh;
 }
 
-.titulo_formulario{
+.titulo_dados_conta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,46 +42,45 @@ img{
     margin-bottom: 40px;
 }
 
-.titulo_formulario p{
+.titulo_dados_conta p {
     color: #78909C;
 }
 
-.dados_conta{
+.dados_conta {
     width: 400px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-self: flex-start;
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 
-.form-wrapper{
+.div-wrapper {
     display: flex;
     justify-content: center;
-
 }
 
-.formulario{
+.container_dados_conta {
     background-color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 45px;
     gap: 20px;
-    padding: 30px  120px 200px 120px;
+    padding: 30px 120px 200px 120px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     max-width: 500px;
     width: 100%;
-   
 }
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: center;
     gap: 70px;
-    
+
 }
+
 .botao {
     margin-top: 20px;
 }
@@ -90,11 +89,100 @@ img{
     width: 100px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: var(--azul-princial); 
+    background-color: var(--azul-princial);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: var(--fonte-principal);  
+    font-family: var(--fonte-principal);
+}
+
+@media (max-width: 960px) {
+    .container_dados_conta {
+        padding: 30px 100px 200px 100px;
+    }
+}
+
+@media (max-width: 730px) {
+    .container_dados_conta {
+        padding: 30px 90px 200px 90px;
+    }
+}
+
+@media (max-width: 670px) {
+    .container_dados_conta {
+        padding: 30px 50px 80px 50px;
+    }
+}
+
+@media (max-width: 595px) {
+    .container_dados_conta {
+        padding: 30px 50px 80px 50px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .botao button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container_dados_conta {
+        padding: 30px 20px 80px 20px;
+    }
+
+    .botao button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .titulo_dados_conta h1 {
+        font-size: 20px;
+    }
+
+    .titulo_dados_conta p {
+        font-size: 10px;
+    }
+
+    .dados_conta {
+        font-size: 12px;
+    }
+
+    .container_dados_conta {
+        padding: 20px 40px;
+        max-width: 60%;
+    }
+
+    .botao button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .container_dados_conta {
+        padding: 20px 20px;
+        max-width: 60%;
+    }
 }
