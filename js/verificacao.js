@@ -13,7 +13,7 @@ document.getElementById('btn_user').addEventListener('click', () => {
         return;
     }
 
-    window.location.href = '../pages/dados-conta.html';
+    window.location.href = '/pages/dados-conta.html';
 
 });
 
