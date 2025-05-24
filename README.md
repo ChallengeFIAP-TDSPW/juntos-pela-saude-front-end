@@ -32,16 +32,6 @@ O sistema busca melhorar a experiência do usuário com:
 | `Agenda`               | Visualização do histórico de consultas e horários disponíveis.            |
 | `Agendar Consulta`     | Página para selecionar especialidade, médico, data e hora .        |
 
-
----
-
-## 🚀 Deploy
-
-Você pode acessar o sistema hospedado no GitHub Pages pelo link abaixo:
-
-👉 [Clique aqui](https://challengefiap-tdspw.github.io/juntos-pela-saude-front-end/)  
-
-
 ---
 
 ## 🛠️ Tecnologias Utilizadas
