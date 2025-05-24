@@ -1,0 +1,100 @@
+#conteudo_main {
+    padding: 60px 0px 60px 40px;
+}
+
+#conteudo_main h1 {
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#conteudo_main > p {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.campo {
+    margin-bottom: 20px; 
+}
+
+.campo label {
+    display: block;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+.campo select,
+.campo input {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+   
+}
+
+.campo select:focus,
+.campo input:focus {
+    border-color: var(--azul-princial);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#btn_agendar {
+    background-color: var(--azul-princial);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para o botão */
+}
+
+#btn_agendar:hover {
+    transform: translateY(-2px);
+}
+
+#btn_agendar:active {
+    transform: translateY(0);
+}
+
+
+.informacoes {
+    width: 95%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f8ff; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.informacoes h2 {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    color: var(--azul-princial);
+    margin-bottom: 10px;
+}
+
+.informacoes p{
+
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    color: #333;
+    margin: 5px 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--azul-princial);
+}
+
