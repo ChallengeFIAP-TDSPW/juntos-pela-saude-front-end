@@ -1,20 +1,20 @@
-#secao1{
-    padding: 60px 0px 30px 40px ;
+#secao1 {
+    padding: 60px 0px 30px 40px;
 }
 
-#secao1 h1{
+#secao1 h1 {
     font-family: var(--fonte-principal);
     font-size: 40px;
     margin-bottom: 40px;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
 }
 
-.card{
+.card {
     width: 700px;
     padding: 25px 0px 25px 25px;
     gap: 40px;
@@ -25,80 +25,114 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
 }
-.card_imagem{
+
+.card_imagem {
     width: 10vw;
 }
 
-.conteudo_card{
+.conteudo_card {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-family: var(--fonte-principal);
-    font-size: 20px; 
+    font-size: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-@media (max-width:930px){
-    #secao1 h1{   
-    font-size: 35px;   
-}
-#secao1 p{
-    font-size: 18px;   
-}
-.card{
-    width: 650px;
-
-}
-.card_imagem{
-    width: 15%;
-}
+@media (max-width: 1115px) {
+    .card_imagem {
+        width: 15%;
+    }
 }
 
-@media (max-width: 750px){
-        #secao1 h1{   
-    font-size: 30px;   
-}
-#secao1 p{
-    font-size: 16px;   
-}
-    .card{
-    width: 400px;
+@media (max-width:930px) {
+    #secao1 h1 {
+        font-size: 35px;
+    }
 
-}
-.card_imagem{
-    width: 25%;
-}
-}
+    #secao1 p {
+        font-size: 18px;
+    }
 
-@media (max-width: 500px){
-            #secao1 h1{   
-    font-size: 25px;   
-}
-#secao1 p{
-    font-size: 14px;   
-}
-    .card{
-    width: 350px;
+    .card {
+        width: 650px;
 
-}
-.card_imagem{
-    width: 25%;
-}
+    }
+
+    .card_imagem {
+        width: 15%;
+    }
 }
 
-@media (max-width: 390px){
-   #secao1{
-    padding: 60px 0px 30px 10px;
-} 
-    .card{
-    width: 310px;
+@media (max-width: 750px) {
+    #secao1 h1 {
+        font-size: 30px;
+    }
+
+    #secao1 p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 400px;
+
+    }
+
+    .card_imagem {
+        width: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    #secao1 h1 {
+        font-size: 25px;
+    }
+
+    #secao1 p {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 350px;
+
+    }
+
+    .card_imagem {
+        width: 25%;
+    }
+}
+
+@media (max-width: 440px) {
+    #secao1 {
+        padding: 60px 0px 40px 10px;
+    }
+
+    .card {
+        width: 330px;
+
+    }
+
+    .card_imagem {
+        width: 33%;
+    }
 
 }
-.card_imagem{
-    width: 33%;
-}
+
+@media (max-width: 390px) {
+    #secao1 {
+        padding: 60px 0px 30px 10px;
+    }
+
+    .card {
+        width: 310px;
+
+    }
+
+    .card_imagem {
+        width: 33%;
+    }
 }

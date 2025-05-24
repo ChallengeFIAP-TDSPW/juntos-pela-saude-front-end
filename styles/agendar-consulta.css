@@ -9,7 +9,7 @@
     color: black;
 }
 
-#conteudo_main > p {
+#conteudo_main>p {
     font-family: var(--fonte-principal);
     font-size: 20px;
     margin-bottom: 20px;
@@ -17,7 +17,7 @@
 }
 
 .campo {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .campo label {
@@ -25,19 +25,19 @@
     font-family: var(--fonte-principal);
     font-size: 16px;
     margin-bottom: 5px;
-    color: #333; 
+    color: #333;
 }
 
 .campo select,
 .campo input {
     width: 100%;
-    max-width: 400px; 
-    padding: 10px 12px; 
+    max-width: 400px;
+    padding: 10px 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: var(--fonte-principal);
     font-size: 14px;
-   
+
 }
 
 .campo select:focus,
@@ -57,7 +57,8 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para o botão */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil para o botão */
 }
 
 #btn_agendar:hover {
@@ -73,7 +74,7 @@
     width: 95%;
     margin-top: 30px;
     padding: 15px;
-    background-color: #f0f8ff; 
+    background-color: #f0f8ff;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -85,68 +86,74 @@
     margin-bottom: 10px;
 }
 
-.informacoes p{
+.informacoes p {
     font-family: var(--fonte-principal);
     font-size: 15px;
     color: #333;
     margin: 5px 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--azul-princial);
 }
 
 
-@media (max-width: 1040px){
-    #conteudo_main > p {
-    font-size: 19px;  
-}
-.informacoes {
-    width: 85%;
+@media (max-width: 1040px) {
+    #conteudo_main>p {
+        font-size: 19px;
+    }
 
-}
+    .informacoes {
+        width: 85%;
+
+    }
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
     #conteudo_main {
-    padding: 60px 0px 60px 20px;
-}
-      #conteudo_main > p {
-    font-size: 15px;  
-    width: 90%;
-}
-.informacoes {
-    width: 80%;
+        padding: 60px 0px 60px 20px;
+    }
 
-}  
-.informacoes p{
-    font-size: 13px;
-}
+    #conteudo_main>p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .informacoes {
+        width: 80%;
+
+    }
+
+    .informacoes p {
+        font-size: 13px;
+    }
 }
 
-@media (max-width:620px ){
-        #conteudo_main {
-    padding: 60px 0px 60px 15px;
+@media (max-width:620px) {
+    #conteudo_main {
+        padding: 60px 0px 60px 15px;
+    }
+
+    #conteudo_main>p {
+        font-size: 15px;
+
+    }
 }
-      #conteudo_main > p {
-    font-size: 15px;  
-    
-}
-}
-@media (max-width: 460px){
+
+@media (max-width: 460px) {
     #conteudo_main h1 {
-    font-size: 35px;
-}
-}
+        font-size: 35px;
+    }
 
-.campo select,
-.campo input {
-    width: 80%;
-   
-}
+    .campo select,
+    .campo input {
+        width: 80%;
 
-.informacoes h2 {
-    font-size: 19px;
- width: 90%;
+    }
+
+    .informacoes h2 {
+        font-size: 19px;
+        width: 90%;
+    }
 }

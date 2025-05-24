@@ -272,6 +272,11 @@ label {
     .icones {
         width: 45px;
     }
+
+    #conteudo_secao2 {
+    background-color: #ffff;
+    padding: 60px 0px 10px 10px;
+}
 }
 
 @media (max-width: 390px) {

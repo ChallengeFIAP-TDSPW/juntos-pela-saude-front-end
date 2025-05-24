@@ -44,10 +44,14 @@ document.getElementById('btn_excluir').addEventListener('click', () => {
     }
 });
 
+
 document.getElementById('btn_logout').addEventListener('click', () => {
-
-    localStorage.removeItem('usuarioLogado');
-    window.location.href = '../index.html';
-
+    if (confirm('Tem certeza que deseja sair dessa conta?')) {
+        localStorage.removeItem('usuarioLogado');
+        window.location.href = '../index.html';
+    }
 });
+
+
+
 

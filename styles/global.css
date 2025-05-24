@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --azul-princial: #2F80ED;
     --azul-claro: #DCEEFF;
     --cinza-claro: #F2F2F2;
@@ -8,32 +8,33 @@
     --verde-claro: #27AE60;
     --vermelho-claro: #EB5757;
 
-    --fonte-principal:  "Montserrat", sans-serif;
+    --fonte-principal: "Montserrat", sans-serif;
 }
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--azul-claro);
 }
 
-main{
+main {
     flex: 1;
 }
 
-header{   
+header {
     background-color: var(--azul-princial);
     font-family: var(--fonte-principal);
     display: flex;
@@ -44,27 +45,27 @@ header{
 
 }
 
-.imagem-logo{
+.imagem-logo {
     width: 8vw;
 }
 
-header nav{
+header nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     gap: 40px;
 
 }
 
-header nav ul li{
+header nav ul li {
     list-style: none;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -76,22 +77,22 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.active{
+.active {
     font-weight: bolder;
 }
 
-#btn_user{
+#btn_user {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.icone-usuario{
+.icone-usuario {
     width: 3vw;
 }
 
 
-footer{
+footer {
     background-color: var(--azul-princial);
     font-family: var(--fonte-principal);
     text-align: center;
@@ -99,7 +100,7 @@ footer{
 
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -108,112 +109,124 @@ footer a{
     transition: transform 0.3s ease;
 }
 
-footer a:hover{
+footer a:hover {
     transform: scale(1.1);
 }
 
-footer p{
+footer p {
     color: #ffffff;
     font-size: 14px;
 }
 
-@media (max-width: 1380px){
-    .imagem-logo{
-    width: 9vw;
-}
-    .icone-usuario{
-    width: 4vw;
-}
-}
-
-@media (max-width: 1100px){
-    .imagem-logo{
-    width: 11vw;
-}
-    .icone-usuario{
-    width: 5vw;
-}
-}
-
-@media (max-width:910px){
-    .imagem-logo{
-    width: 12vw;
-}
-    .icone-usuario{
-    width: 5.5vw;
-}
-}
-
-@media (max-width: 780px){
-    header nav ul li a{
-    font-size: 16px; 
-}
-    .imagem-logo{
-    width: 13vw;
-}
-    .icone-usuario{
-    width: 6vw;
-}
-
-footer a{ 
-    font-size: 17px; 
-}
-
-}
-
-@media (max-width: 650px){
-    header nav ul li a{
-    font-size: 15px; 
-}
-    .imagem-logo{
-    width: 14vw;
-}
-    .icone-usuario{
-    width: 6.5vw;
-}
-
-footer a{ 
-    font-size: 15px; 
-}
-}
-
-@media (max-width: 585px){
-    header nav ul li a {
-        font-size: 18px; 
-    }
+@media (max-width: 1380px) {
     .imagem-logo {
-        margin-bottom: 10px; 
+        width: 9vw;
+    }
+
+    .icone-usuario {
+        width: 4vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .imagem-logo {
+        width: 11vw;
+    }
+
+    .icone-usuario {
+        width: 5vw;
+    }
+}
+
+@media (max-width:910px) {
+    .imagem-logo {
+        width: 12vw;
+    }
+
+    .icone-usuario {
+        width: 5.5vw;
+    }
+}
+
+@media (max-width: 780px) {
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .imagem-logo {
+        width: 13vw;
+    }
+
+    .icone-usuario {
+        width: 6vw;
+    }
+
+    footer a {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .imagem-logo {
+        width: 14vw;
+    }
+
+    .icone-usuario {
+        width: 6.5vw;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 585px) {
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .imagem-logo {
+        margin-bottom: 10px;
         width: 30vw;
     }
+
     .icone-usuario {
         width: 10vw;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
+
     header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 0px; 
+        padding: 20px 0px;
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
     }
+
     header nav {
-        position: static; 
-        transform: none; 
-        margin: 10px 0; 
+        position: static;
+        transform: none;
+        margin: 10px 0;
     }
+
     header nav ul {
-        flex-direction: row; 
-        gap: 20px; 
+        flex-direction: row;
+        gap: 20px;
     }
 }
 
-@media (max-width: 390px){
-    footer a{ 
-    font-size: 14px; 
-}
-footer p{
-    font-size: 12px;
-}
-}
+@media (max-width: 390px) {
+    footer a {
+        font-size: 14px;
+    }
 
+    footer p {
+        font-size: 12px;
+    }
+}

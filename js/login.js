@@ -1,22 +1,26 @@
-function getUsuarios(){
+function getUsuarios() {
     const usuariosJSON = localStorage.getItem('usuarios');
-    return usuariosJSON ? JSON.parse(usuariosJSON) : []; 
+    return usuariosJSON ? JSON.parse(usuariosJSON) : [];
 }
 
-function salvarUsuarios(usuarios){
+function salvarUsuarios(usuarios) {
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
 }
 
-function mostrarMensagem (msg, cor){
+function mostrarMensagem(msg, cor) {
     const div = document.getElementById('mensagem');
     div.textContent = msg;
     div.style.color = cor;
 }
 
-// Cadastro 
+function validarCPF(cpf) {
+    const cpfNumerico = cpf.replace(/\D/g, '');
+    return cpfNumerico.length === 11;
+}
+
 const formCadastro = document.getElementById('form_cadastro');
 if (formCadastro) {
-    formCadastro.addEventListener('submit', function(e) {
+    formCadastro.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const nome = document.getElementById('nome').value;
@@ -30,6 +34,11 @@ if (formCadastro) {
             return;
         }
 
+        if (!validarCPF(cpf)) {
+            mostrarMensagem('CPF inválido. Deve conter exatamente 11 dígitos numéricos.', 'red');
+            return;
+        }
+
         const usuarios = getUsuarios();
 
         const existe = usuarios.some(user => user.email === email);
@@ -40,7 +49,7 @@ if (formCadastro) {
             return;
         }
 
-        if (cpfExiste){
+        if (cpfExiste) {
             mostrarMensagem('CPF já cadastrado!', 'red');
             return;
         }
@@ -55,17 +64,15 @@ if (formCadastro) {
             setTimeout(() => {
                 window.location.href = '../pages/login.html';
             }, 1500);
-
         } else {
             mostrarMensagem('As senhas não coincidem. Por favor, verifique.', 'red');
         }
     });
 }
 
-// Login
 const formLogin = document.getElementById('form_login');
 if (formLogin) {
-    formLogin.addEventListener('submit', function(e) {
+    formLogin.addEventListener('submit', function (e) {
         e.preventDefault();
 
         const email = document.getElementById('email').value;
@@ -78,7 +85,6 @@ if (formLogin) {
         if (!usuario) {
             mostrarMensagem('Email não cadastrado!', 'red');
             formLogin.reset();
-            
         } else if (usuario.senha === senha) {
             mostrarMensagem('Login realizado com sucesso!', 'green');
             formLogin.reset();
@@ -88,11 +94,9 @@ if (formLogin) {
             setTimeout(() => {
                 window.location.href = '../index.html';
             }, 1500);
-
         } else {
             mostrarMensagem('Senha incorreta!', 'red');
         }
-
     });
 }
 

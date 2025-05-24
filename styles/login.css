@@ -119,8 +119,7 @@ a {
 
 @media (max-width: 760px) {
 
-    #form_login
-    #form_editar {
+    #form_login #form_editar {
         padding: 30px 100px 150px 100px;
     }
 }
@@ -143,8 +142,9 @@ a {
     }
 }
 
-@media (max-width:665px){
-     #form_login,
+@media (max-width:665px) {
+
+    #form_login,
     #form_cadastro,
     #form_editar {
         padding: 40px 50px 80px 50px;
@@ -203,82 +203,84 @@ a {
     }
 }
 
-@media (max-width: 490px){
+@media (max-width: 490px) {
+
     #form_login,
     #form_cadastro,
     #form_editar {
-        padding: 40px 40px 80px 40px; 
-        max-width: 90%; 
-        margin: 20px auto; 
+        padding: 40px 40px 80px 40px;
+        max-width: 90%;
+        margin: 20px auto;
     }
 
     .titulo_formulario h1 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .titulo_formulario p {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .campo {
         display: flex;
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
     }
 
     .campo input {
-        width: 100%; 
-        font-size: 16px; 
+        width: 100%;
+        font-size: 16px;
     }
 
     .botao button {
-        width: 110%; 
-        font-size: 16px; 
+        width: 110%;
+        font-size: 16px;
     }
 
     .link {
-        width: 100%; 
-        text-align: center; 
-        font-size: 12px; 
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 450px) {
+
     #form_login,
     #form_cadastro,
     #form_editar {
-        padding: 40px 15px 80px 15px; 
-        max-width: 90%; 
-        margin: 20px auto; 
+        padding: 40px 15px 80px 15px;
+        max-width: 90%;
+        margin: 20px auto;
     }
 
     .titulo_formulario h1 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .titulo_formulario p {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .campo {
         display: flex;
         flex-direction: column;
-        gap: 10px; 
+        gap: 10px;
     }
 
     .campo input {
-        width: 100%; 
-        font-size: 16px; 
+        width: 100%;
+        font-size: 16px;
     }
 
     .botao button {
-        width: 110%; 
-        font-size: 16px; 
+        width: 110%;
+        font-size: 16px;
     }
 
     .link {
-        width: 100%; 
-        text-align: center; 
-        font-size: 12px; 
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
     }
 }
